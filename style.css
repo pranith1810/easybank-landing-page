@@ -9,6 +9,8 @@
 body {
     font-size: 18px;
     font-family: 'Public Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -19,7 +21,7 @@ header {
     background-color: #fff;
 }
 
-header nav{
+header nav {
     height: 4em;
 }
 
@@ -29,13 +31,12 @@ header nav a {
     height: 4em;
     line-height: 4em;
     margin: 0 1em;
-    color: #CCCBD0;
+    color: #ABABAF;
 }
 
 header nav a:hover {
     color: #52575d;
     border-bottom: 0.2em solid #30C986;
-    
 }
 
 header span a {
@@ -45,7 +46,7 @@ header span a {
     height: 3em;
     line-height: 3em;
     text-align: center;
-    width: 10em;
+    width: 15em;
     font-weight: 800;
     border-radius: 2em;
     background: linear-gradient(to left, #2CBBC7 0%, #31D069 75%);
@@ -55,4 +56,64 @@ header span a:hover {
     background: linear-gradient(to right, #00ff99 0%, #33cccc 100%);
 }
 
-/*linear-gradient(to left, #2CBBC7 0%, #31D069 75%);*/
+section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FAFAFA;
+    margin-top: 1rem;
+    align-items: start;
+    height: 40rem;
+    background-image: url("images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 60rem -17.5rem;
+}
+
+section .mobile-image {
+    flex: 1 1 50%;
+    height: 120%;
+    overflow: hidden;
+}
+
+section .mobile-image img{
+    position: relative;
+    bottom : 20%;
+    left: 15%;
+}
+
+section .description {
+    flex: 1 1 50%;
+    margin:0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+section .description .heading {
+    font-size: 3em;
+    margin: 0 1rem;
+}
+
+section .description .information {
+    color: #ABABAF;
+    line-height: 2rem;
+    margin: 1rem;
+}
+
+section .description a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    margin: 1rem;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    width: 15em;
+    font-weight: 800;
+    border-radius: 2em;
+    background: linear-gradient(to left, #2CBBC7 0%, #31D069 75%);
+}
+
+section .description a:hover {
+    background: linear-gradient(to right, #00ff99 0%, #33cccc 100%);
+}
