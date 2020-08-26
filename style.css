@@ -206,10 +206,93 @@ header span a:hover {
 }
 
 .articles-container .article-title:hover {
-    color:#33CF72;
+    color: #33CF72;
 }
 
 .articles-container .article-description {
     color: #ABABAF;
     padding-top: 1rem;
+}
+
+footer {
+    background-color: #2D314E;
+    color: #fff;
+}
+
+.footer-all {
+    margin: 0 18rem 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-all .bank-logo-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-all .bank-logo-socials .logo {
+    padding-bottom: 4rem;
+}
+
+.footer-all .bank-logo-socials .social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-all .bank-logo-socials .social-links .social:hover {
+    filter: sepia() saturate(10000%) hue-rotate(60deg);
+}
+
+.footer-all .other-links {
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 15rem 0 0;
+    padding: 2rem 0;
+}
+
+.footer-all .other-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 0.5rem 1rem;
+}
+
+.footer-all .other-links a:hover {
+    color: #33CF72;
+}
+
+.footer-all .request-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-all .request-copyright .request {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    width: 10em;
+    font-weight: 800;
+    border-radius: 2em;
+    margin-left: 4rem;
+    background: linear-gradient(to left, #2CBBC7 0%, #31D069 75%);
+}
+
+.footer-all .request-copyright .request:hover {
+    background: linear-gradient(to right, #00ff99 0%, #33cccc 100%);
+}
+
+.footer-all .request-copyright .copyright {
+    font-size: 0.8em;
+    color: #ABABAF;
+    padding: 1rem;
 }
