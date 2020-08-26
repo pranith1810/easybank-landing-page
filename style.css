@@ -25,6 +25,18 @@ header nav {
     height: 4em;
 }
 
+header .menu {
+    display: none;
+}
+
+header .cross-hidden {
+    display: none;
+}
+
+.menu-list-hide {
+    display: none;
+}
+
 header nav a {
     display: inline-block;
     text-decoration: none;
@@ -181,7 +193,7 @@ header span a:hover {
     height: fit-content;
 }
 
-.articles-container .article .article-img{
+.articles-container .article .article-img {
     height: 40%;
 }
 
@@ -298,19 +310,54 @@ footer {
     padding: 1rem;
 }
 
-@media all and (max-width:66em) {
+@media all and (max-width:50em) {
     header {
         height: 3em;
         justify-content: space-between;
     }
     header a {
-        margin-left: 2em;
+        margin-left: 1rem;
     }
-    header nav a {
+    header nav {
         display: none;
     }
-    header span a {
+    header span {
         display: none;
+    }
+    header .menu {
+        display: inline;
+        cursor: pointer;
+        margin-right: 1rem;
+        position: relative;
+    }
+    header .menu-hidden{
+        display:none;
+    }
+    header .cross{
+        display: inline;
+        cursor: pointer;
+        margin-right: 1rem;
+        position: relative;
+    }
+    .menu-open {
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        z-index: 1;
+    }
+    .menu-open ul {
+        border-radius: 5%;
+        background-color: #F4F5F7;
+        padding: 0 8rem;
+    }
+    .menu-open ul li {
+        padding: 1rem 0;
+        list-style: none;
+    }
+    .menu-open ul li a {
+        text-decoration: none;
+        color: #ABABAF;
     }
     .introduction {
         flex-direction: column;
@@ -321,11 +368,12 @@ footer {
         background-size: contain;
     }
     .introduction .mobile-image {
+        flex:1;
         overflow: hidden;
         max-height: auto;
     }
     .introduction .mobile-image img {
-        bottom: 8rem;
+        bottom: 4rem;
         left: 0%;
         width: 100%;
         height: 100%;

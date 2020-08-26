@@ -15,6 +15,18 @@
       <a href="index.html">
         <img src="images/logo.svg">
       </a>
+      <div onclick="menuToggle()" id="menu-id" class="menu"><img src="images/icon-hamburger.svg"></div>
+      <div onclick="menuToggle()" id="cross-id" class="cross-hidden"><img src="images/icon-close.svg">
+        <div id="menu-list" class="menu-list-hide">
+          <ul>
+            <li><a href="#body">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
       <nav>
         <a href="#body">Home</a>
         <a href="#">About</a>
@@ -170,6 +182,18 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function menuToggle() {
+        let menuList = document.getElementById("menu-list");
+        let menu = document.getElementById("menu-id");
+        let cross = document.getElementById("cross-id");
+
+        menuList.classList.toggle("menu-open");
+        menu.classList.toggle("menu-hidden");
+        cross.classList.toggle("cross");
+      }
+    </script>
 
   </body>
 
