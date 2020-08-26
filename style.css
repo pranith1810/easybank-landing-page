@@ -190,7 +190,7 @@ header span a:hover {
 .articles-container .article {
     margin-right: 1rem;
     background-color: #fff;
-    height: fit-content;
+    min-height: fit-content;
 }
 
 .articles-container .article .article-img {
