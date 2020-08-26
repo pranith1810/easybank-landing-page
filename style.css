@@ -56,7 +56,7 @@ header span a:hover {
     background: linear-gradient(to right, #00ff99 0%, #33cccc 100%);
 }
 
-section {
+.introduction {
     display: flex;
     justify-content: space-around;
     background-color: #FAFAFA;
@@ -74,15 +74,15 @@ section .mobile-image {
     overflow: hidden;
 }
 
-section .mobile-image img{
+section .mobile-image img {
     position: relative;
-    bottom : 20%;
+    bottom: 20%;
     left: 15%;
 }
 
 section .description {
     flex: 1 1 50%;
-    margin:0 10rem;
+    margin: 0 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,20 +91,19 @@ section .description {
 
 section .description .heading {
     font-size: 3em;
-    margin: 0 1rem;
+    color: #595869;
 }
 
 section .description .information {
     color: #ABABAF;
     line-height: 2rem;
-    margin: 1rem;
+    margin: 2rem 0;
 }
 
 section .description a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
-    margin: 1rem;
     height: 3em;
     line-height: 3em;
     text-align: center;
@@ -116,4 +115,46 @@ section .description a {
 
 section .description a:hover {
     background: linear-gradient(to right, #00ff99 0%, #33cccc 100%);
+}
+
+.features {
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.features .reason {
+    margin: 6rem 10rem 3rem 10rem;
+    width: 40%;
+    flex: 1;
+}
+
+.features .reason .question {
+    font-size: 2em;
+    color: #41444b;
+}
+
+.features .reason .answer {
+    color: #ABABAF;
+    margin: 1rem 0;
+    padding-right: 6rem;
+    line-height: 1.5rem;
+}
+
+.features-individual {
+    display: flex;
+    margin: 0 18rem 6rem 10rem;
+}
+
+.features-individual .feature {
+    padding-right: 3rem;
+    line-height: 1.5rem;
+    color: #ABABAF;
+}
+
+.features .feature-heading {
+    margin: 2rem 0;
+    font-size: 1.5em;
+    color: #41444b;
 }
