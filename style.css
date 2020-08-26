@@ -178,9 +178,10 @@ header span a:hover {
 .articles-container .article {
     margin-right: 1rem;
     background-color: #fff;
+    height: fit-content;
 }
 
-.articles-container .article-img {
+.articles-container .article .article-img{
     height: 40%;
 }
 
@@ -211,7 +212,7 @@ header span a:hover {
 
 .articles-container .article-description {
     color: #ABABAF;
-    padding-top: 1rem;
+    padding: 1rem 0 1rem 0;
 }
 
 footer {
@@ -295,4 +296,105 @@ footer {
     font-size: 0.8em;
     color: #ABABAF;
     padding: 1rem;
+}
+
+@media all and (max-width:66em) {
+    header {
+        height: 3em;
+        justify-content: space-between;
+    }
+    header a {
+        margin-left: 2em;
+    }
+    header nav a {
+        display: none;
+    }
+    header span a {
+        display: none;
+    }
+    .introduction {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        background-image: url("images/bg-intro-mobile.svg");
+        background-position: 0 0;
+        background-size: contain;
+    }
+    .introduction .mobile-image {
+        overflow: hidden;
+        max-height: auto;
+    }
+    .introduction .mobile-image img {
+        bottom: 8rem;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+    }
+    .introduction .description {
+        order: 1;
+        margin: 0 3rem 3rem 3rem;
+        align-items: center;
+    }
+    .features .reason {
+        text-align: center;
+        width: auto;
+        margin: 2rem;
+    }
+    .features .reason .question {
+        margin: 0 3rem 0 3rem;
+    }
+    .features-individual {
+        flex-direction: column;
+        margin: 0;
+    }
+    .features .reason .answer {
+        padding-right: 0;
+    }
+    .features-individual .feature {
+        padding: 0;
+        margin: 1rem 1rem;
+    }
+    .features-individual .feature {
+        text-align: center;
+    }
+    .articles-section .articles-heading {
+        margin: 2rem 2rem;
+        text-align: center;
+    }
+    .articles-container {
+        flex-direction: column;
+        margin: 2rem 2rem;
+    }
+    .articles-container .article-author {
+        padding: 2rem 0 1rem 0;
+    }
+    .articles-container .article {
+        padding-bottom: 1rem;
+    }
+    .footer-all {
+        margin: 1rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-all .bank-logo-socials .logo {
+        padding: 1rem;
+    }
+    .footer-all .other-links {
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 1.5rem;
+    }
+    .footer-all .other-links a {
+        padding: 0.5rem;
+    }
+    .footer-all .request-copyright {
+        align-items: center;
+    }
+    .footer-all .request-copyright .request {
+        margin: 0;
+    }
+    .footer-all .request-copyright .copyright {
+        padding: 1rem;
+    }
 }
