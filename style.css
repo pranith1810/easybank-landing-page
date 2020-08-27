@@ -418,6 +418,7 @@ footer {
     }
     .articles-container .article {
         padding-bottom: 1rem;
+        margin-right: 0rem;
     }
     .footer-all {
         margin: 1rem;
